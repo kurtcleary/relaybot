@@ -1,0 +1,14 @@
+[Unit]
+Description=Telegram <-> Discord relay
+After=network-online.target
+Wants=network-online.target
+[Service]
+WorkingDirectory=/opt/relaybot
+Environment=PYTHONUNBUFFERED=1
+ExecStart=/opt/relaybot/.venv/bin/python /opt/relaybot/src/relay.py
+Restart=always
+RestartSec=5
+StandardOutput=append:/opt/relaybot/logs/relay.log
+StandardError=append:/opt/relaybot/logs/relay.log
+[Install]
+WantedBy=multi-user.target

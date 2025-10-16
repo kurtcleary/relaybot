@@ -1,0 +1,9 @@
+1. Upload relaybot.zip to your VPS.
+2. unzip relaybot.zip -d /opt/relaybot
+3. cd /opt/relaybot
+4. python3 -m venv .venv && source .venv/bin/activate
+5. pip install -r requirements.txt
+6. cp config.example.json config.json
+7. Fill your tokens + IDs
+8. sudo cp relaybot.service /etc/systemd/system/
+9. sudo systemctl daemon-reload && sudo systemctl enable --now relaybot.service

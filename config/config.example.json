@@ -1,0 +1,8 @@
+{
+  "telegram_token": "123456:ABCDEF_FAKE_TOKEN_EXAMPLE",
+  "discord_token": "FAKE.DISCORD.BOT.TOKEN.EXAMPLE",
+  "admins": [],
+  "mappings": [
+    {"telegram_chat_id": -1001111111111, "discord_channel_id": 111111111111111111}
+  ]
+}
